@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Arthur\'s Seat AR Visualiser</string>
+    <string name="drawerOpen">Open navigation drawer</string>
+    <string name="drawerClose">Close navigation drawer</string>
+    <string name="track">Tracking (Off)</string>
+    <string-array name="layerSelect">
+        <item><font color="#000000">Trails</font></item>
+        <item>Contours</item>
+        <item>Surface Geology</item>
+        <item>Vegetation</item>
+    </string-array>
+</resources>

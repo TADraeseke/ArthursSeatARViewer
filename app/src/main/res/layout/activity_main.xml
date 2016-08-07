@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/veg"
+            android:background="@android:color/transparent"
+            android:fillAfter="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/surfGeo"
+            android:background="@android:color/transparent"
+            android:fillAfter="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/surfGeoAnn"
+            android:background="@android:color/transparent"
+            android:fillAfter="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/contours"
+            android:background="@android:color/transparent"
+            android:fillAfter="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/paths"
+            android:background="@android:color/transparent"
+            android:fillAfter="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/horizon"
+            android:background="@android:color/transparent"
+            android:fillAfter="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/drawerTut"
+            android:background="@android:color/transparent"
+            android:fillAfter="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/trackTut"
+            android:background="@android:color/transparent"
+            android:fillAfter="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgClose"
+            android:layout_gravity="right|top"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:padding="20dp"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/track"
+            android:onClick="selfDestruct"
+            android:id="@+id/trackButton"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="top|right"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/layerList"
+        android:choiceMode="multipleChoice"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:textColor="#000000"
+        android:background="#ffeeeeee"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"/>
+
+</android.support.v4.widget.DrawerLayout>
